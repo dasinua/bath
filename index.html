@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Bath</title>
+	<title>Городская служба реставрации ванн</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="" />
@@ -22,7 +22,7 @@
 </head>
 <body>
 
-<header class="da-header">
+<header id="yak1" class="da-header">
 	<div class="container">
 		<div class="row">
 
@@ -55,7 +55,7 @@
 				</div>
 				<div class="row">
 					<div class="col-sm-12">
-						<button class="da-header__btn" data-toggle="modal" data-target="#myModal1">
+						<button class="da-header__btn" name="callback-head" data-toggle="modal" data-target="#myModal1">
 						  ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК
 						</button>
 						</div>
@@ -81,14 +81,14 @@
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">ГЛАВНАЯ <span class="sr-only">(current)</span></a></li>
-                <li><a href="#">ДЛЯ КОГО ПОДХОДИТ</a></li>
-                <li><a href="#">ПРЕИМУЩЕСТВА</a></li>
-                <li><a href="#">ВИДЫ РЕСТАВРАЦИИ</a></li>
-                <li><a href="#">АКЦИИ</a></li>
-                <li><a href="#">ОТЗЫВЫ</a></li>
-                <li><a href="#">НАШИ КОНТАКТЫ</a></li>
+            <ul id="menu" class="nav navbar-nav">
+                <li><a id="active" href="#yak1">ГЛАВНАЯ <span class="sr-only">(current)</span></a></li>
+                <li><a href="#yak2">ДЛЯ КОГО ПОДХОДИТ</a></li>
+                <li><a href="#yak3">ПРЕИМУЩЕСТВА</a></li>
+                <li><a href="#yak4">ВИДЫ РЕСТАВРАЦИИ</a></li>
+                <li><a href="#yak5">АКЦИИ</a></li>
+                <li><a href="#yak6">ОТЗЫВЫ</a></li>
+                <li><a href="#yak7">НАШИ КОНТАКТЫ</a></li>
             </ul>
 
           </div>
@@ -114,7 +114,7 @@
                         ВЫЕЗД МАСТЕРА В ТЕЧЕНИИ 1 ЧАСА
 			        </h2>
 
-		            <form class="form-inline">
+		            <form id="callMaster" class="form-inline">
 		                <div class="form-group">
 		                    <input type="text" name="name" class="form-control" id="name" placeholder="ВВЕДИТЕ ИМЯ" required>
 		                </div>
@@ -123,7 +123,7 @@
 		                </div>
 
 		                <div class="form-group">
-		                    <button type="submit" class="da-offer__btn">ВЫЗВАТЬ МАСТЕРА</button>
+		                    <button type="submit" class="da-offer__btn" name="call-master">ВЫЗВАТЬ МАСТЕРА</button>
 		                </div>
 		            </form>
 
@@ -198,7 +198,7 @@
 </section>
 <!-- /offer -->
 <!-- restoration -->
-<section class="da-restoration">
+<section id="yak2" class="da-restoration">
 	<div class="da-restoration__bg">
 		<div class="container">
 		<h2 class="da-restoration__title">
@@ -249,7 +249,7 @@
 	</div>
 	<div class="da-restoration__wrap">
 		<div class="container">
-			<button class="da-restoration__btn" data-toggle="modal" data-target="#myModal2">
+			<button class="da-restoration__btn" data-toggle="modal" data-target="#myModal2" name="consultation-master">
 		      ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ ОТ МАСТЕРА ЧЕРЕЗ 20 СЕКУНД
 		   </button>
 		</div>
@@ -257,7 +257,7 @@
 </section>
 <!-- /restoration -->
 <!-- reason -->
-<section class="da-reason">
+<section id="yak3" class="da-reason">
 	<div class="da-reason__wrap">
 		<div class="container">
 			<h2 class="da-reason__title">
@@ -327,7 +327,7 @@
 			</div>
 		</div>
 
-		<button class="da-reason__btn" data-toggle="modal" data-target="#myModal3">
+		<button class="da-reason__btn" data-toggle="modal" data-target="#myModal3" name="restore-bath">
 		      ХОЧУ ВОССТАНОВИТЬ ВАННУ
 		</button>
 
@@ -335,7 +335,7 @@
 </section>
 <!-- /reason -->
 <!-- bid -->
-<section class="da-bid clearfix">
+<section id="yak5" class="da-bid clearfix">
 
 			<div class="col-sm-6">
 				<div class="da-bid__left clearfix">
@@ -345,13 +345,13 @@
                         ЧТОБЫ ПОЛУЧИТЬ СКИДКУ
 					</h3>
 					<!-- form -->
-					<form>
+					<form id="discount">
 		                <div class="form-group">
 		                    <input type="tel" name="phone" class="form-control da-bid__input maskedinput" id="phone" placeholder="+7(__ __ __) __ __ __ - __ __  - __ __">
 		                </div>
 
 		                <div class="form-group">
-		                    <button type="submit" class="da-bid__btn">
+		                    <button type="submit" class="da-bid__btn" name="discount-50">
 		                      ПОЛУЧИТЬ СКИДКУ 50%
 		                    </button>
 		                </div>
@@ -378,7 +378,7 @@
 </section>
 <!-- /bid -->
 <!-- option -->
-<section class="da-option">
+<section id="yak4" class="da-option">
 	<div class="container">
 		<h2 class="da-option__title">
 				ВЫБЕРИТЕ ВАРИАНТ РЕСТАВРАЦИИ ВАШЕЙ ВАННЫ
@@ -398,7 +398,8 @@
 		                </p>
 					</div>
 
-					<button class="da-option__btn" data-toggle="modal" data-target="#myModal4">
+					<button class="da-option__btn" data-toggle="modal" data-target="#myModal4" name="
+calculation-2700">
 		               ПОЛУЧИТЬ РАСЧЕТ
 		           </button>
 				</div>
@@ -416,7 +417,8 @@
 		                </p>
 					</div>
 
-					<button class="da-option__btn" data-toggle="modal" data-target="#myModal4">
+					<button class="da-option__btn" data-toggle="modal" data-target="#myModal4" name="
+calculation-3300">
 		               ПОЛУЧИТЬ РАСЧЕТ
 		           </button>
 				</div>
@@ -434,7 +436,8 @@
 		                </p>
 					</div>
 
-					<button class="da-option__btn" data-toggle="modal" data-target="#myModal4">
+					<button class="da-option__btn" data-toggle="modal" data-target="#myModal4" name="
+calculation-4500">
 		               ПОЛУЧИТЬ РАСЧЕТ
 		           </button>
 				</div>
@@ -455,7 +458,7 @@
 						ИЛИ ОСТАВЬТЕ ЗАЯВКУ:<br>
 			        </h2>
 
-		            <form class="form-inline">
+		            <form id="learnMore" class="form-inline">
 		                <div class="form-group">
 		                    <input type="text" name="name" class="form-control" id="name" placeholder="ВВЕДИТЕ ИМЯ" required>
 		                </div>
@@ -464,7 +467,7 @@
 		                </div>
 
 		                <div class="form-group">
-		                    <button type="submit" class="da-form__btn">
+		                    <button type="submit" class="da-form__btn" name="learn-more">
 		                      УЗНАТЬ ПОДРОБНЕЕ
 		                    </button>
 		                </div>
@@ -481,7 +484,7 @@
 </section>
 <!-- /form -->
 <!-- slider -->
-<section class="da-slider">
+<section id="yak6" class="da-slider">
 	<div class="container">
 		<h2 class="da-slider__title">
 			НАШИ ВАННЫ ДО И ПОСЛЕ
@@ -716,7 +719,7 @@
 	</h2>
 </div>
 <div class="container">
-	<div id="carousel2" class="carousel slide" data-ride="carousel">
+	<div id="carousel2" class="carousel slide">
     <!-- Indicators -->
 
     <!-- Wrapper for slides -->
@@ -727,7 +730,8 @@
         		<div class="col-sm-6">
         			<div class="da-slider__left">
 				      <div class="embed-responsive embed-responsive-16by9">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/6C7opaKZwEE" frameborder="0" allowfullscreen></iframe>
+                        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/6C7opaKZwEE" frameborder="0" allowfullscreen></iframe> -->
+                        <iframe src="//vk.com/video_ext.php?oid=162574464&id=456239017&hash=99a532c28d07e46b&hd=2" width="853" height="480" frameborder="0" allowfullscreen></iframe>
                     </div>
         	       </div>
         		</div>
@@ -735,14 +739,14 @@
         		<div class="col-sm-6">
         			<div class="da-slider__right">
 				      <div class="embed-responsive embed-responsive-16by9">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/6C7opaKZwEE" frameborder="0" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/DmfJGQjTLrg" frameborder="0" allowfullscreen></iframe>
                     </div>
         	       </div>
         		</div>
         	</div>
         </div>
         <!-- item0 -->
-        <div class="item">
+        <!-- <div class="item">
         	<div class="row">
         		<div class="col-sm-6">
         			<div class="da-slider__left">
@@ -760,9 +764,9 @@
         	       </div>
         		</div>
         	</div>
-        </div>
+        </div> -->
         <!-- item0 -->
-        <div class="item">
+        <!-- <div class="item">
         	<div class="row">
         		<div class="col-sm-6">
         			<div class="da-slider__left">
@@ -780,7 +784,7 @@
         	       </div>
         		</div>
         	</div>
-        </div>
+        </div> -->
 	<!-- /item -->
     </div>
 
@@ -866,7 +870,7 @@
 			<!-- /col -->
 		</div>
 
-		<button class="da-materials__btn" data-toggle="modal" data-target="#myModal5">
+		<button class="da-materials__btn" data-toggle="modal" data-target="#myModal5" name="pick-enamel">
 		      ПОДОБРАТЬ ЭМАЛЬ ПО ЦЕНЕ И КАЧЕСТВУ
 		</button>
 	</div>
@@ -882,7 +886,7 @@
                         ЭМАЛЬЮ <span class="da-form2__black">TIKKURILA</span> ЗАМЕНА СИФОНА <span class="da-form2__yellow">В ПОДАРОК</span>
 			        </h2>
 
-		            <form class="form-inline">
+		            <form id="receivePresen" class="form-inline">
 		                <div class="form-group">
 		                    <input type="text" name="name" class="form-control" id="name" placeholder="ВВЕДИТЕ ИМЯ" required>
 		                </div>
@@ -891,7 +895,7 @@
 		                </div>
 
 		                <div class="form-group">
-		                    <button type="submit" class="da-form2__btn">
+		                    <button type="submit" class="da-form2__btn" name="receive-present">
 		                      ПОЛУЧИТЬ ПОДАРОК
 		                    </button>
 		                </div>
@@ -904,7 +908,7 @@
 </section>
 <!-- /form2 -->
 <!-- contacts -->
-<section class="da-contacts">
+<section id="yak7" class="da-contacts">
 	<div class="container">
 		<h2 class="da-contacts__title">
 			НАШИ КОНТАКТЫ
@@ -960,7 +964,7 @@
 				</div>
 				<div class="row">
 					<div class="col-sm-12">
-						<button class="da-footer__btn" data-toggle="modal" data-target="#myModal1">
+						<button class="da-footer__btn" data-toggle="modal" data-target="#myModal1" name="callback-footer">
 						  ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК
 						</button>
 						</div>
@@ -988,6 +992,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-body">
+                	<button type="button" class="close da-close" data-dismiss="modal" aria-label="Close">X</button>
 					<div class="da-modal__item">
 						<h3 class="da-modal__title">
 							ОСТАВЬТЕ ЗАЯВКУ НА ОБРАТНЫЙ ЗВОНОК<br>
@@ -995,7 +1000,7 @@
 							ЧЕРЕЗ 20 СЕКУНД
 						</h3>
 						<!-- form -->
-						<form>
+						<form id="myModal11">
 			                <div class="form-group">
 			                    <input type="text" name="name" class="form-control" id="name" placeholder="Введите Ваше имя" required>
 			                </div>
@@ -1023,13 +1028,14 @@
         <div class="modal-dialog">
             <div class="modal-content modal-content--modal2">
                 <div class="modal-body">
+                <button type="button" class="close da-close" data-dismiss="modal" aria-label="Close">X</button>
 					<div class="da-modal__item da-modal__item--modal2">
 						<h3 class="da-modal__title da-modal__title--modal2">
 							ОСТАВЬТЕ ЗАЯВКУ И НАШ МАСТЕР<br>
                             ПОЗВОНИТ ВАМ УЖЕ ЧЕРЕЗ 20 СЕКУНД
 						</h3>
 						<!-- form -->
-						<form>
+						<form id="myModal22">
 			                <div class="form-group">
 			                    <input type="text" name="name" class="form-control form-control--modal2" id="name" placeholder="Введите Ваше имя" required>
 			                </div>
@@ -1057,6 +1063,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-body">
+                <button type="button" class="close da-close" data-dismiss="modal" aria-label="Close">X</button>
 					<div class="da-modal__item">
 						<h3 class="da-modal__title">
 							ОСТАВЬТЕ ЗАЯВКУ НА ФОРМИРОВАНИЕ ЗАКАЗА<br>
@@ -1064,7 +1071,7 @@
                             УЖЕ ЧЕРЕЗ 20 СЕКУНД<br>
 						</h3>
 						<!-- form -->
-						<form>
+						<form id="myModal33">
 			                <div class="form-group">
 			                    <input type="text" name="name" class="form-control" id="name" placeholder="Введите Ваше имя" required>
 			                </div>
@@ -1091,6 +1098,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-body">
+                <button type="button" class="close da-close" data-dismiss="modal" aria-label="Close">X</button>
 					<div class="da-modal__item">
 						<h3 class="da-modal__title">
 							ОСТАВЬТЕ ЗАЯВКУ ЧТОБЫ ПОЛУЧИТЬ РАСЧЕТ<br>
@@ -1099,7 +1107,7 @@
                             УЖЕ ЧЕРЕЗ 20 СЕКУНД
 						</h3>
 						<!-- form -->
-						<form>
+						<form id="myModal44">
 			                <div class="form-group">
 			                    <input type="text" name="name" class="form-control" id="name" placeholder="Введите Ваше имя" required>
 			                </div>
@@ -1127,6 +1135,7 @@
         <div class="modal-dialog">
             <div class="modal-content modal-content--modal2">
                 <div class="modal-body">
+                <button type="button" class="close da-close" data-dismiss="modal" aria-label="Close">X</button>
 					<div class="da-modal__item da-modal__item--modal2">
 						<h3 class="da-modal__title da-modal__title--modal2">
 							ОСТАВЬТЕ ЗАЯВКУ  И НАШ МЕНЕДЖЕР<br>
@@ -1135,7 +1144,7 @@
                             КАЧЕСТВУ УЖЕ ЧЕРЕЗ 20 СЕКУНД
 						</h3>
 						<!-- form -->
-						<form>
+						<form id="myModal55">
 			                <div class="form-group">
 			                    <input type="text" name="name" class="form-control form-control--modal2" id="name" placeholder="Введите Ваше имя" required>
 			                </div>
@@ -1158,5 +1167,27 @@
     </div>
 <!--/ 5. ПОДОБРАТЬ ЭМАЛЬ ПО ЦЕНЕ И КАЧЕСТВУ -->
 
+<!-- Спасибо за заявку -->
+<div class="modal fade da-modal" id="thanks" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                	<button type="button" class="close da-close" data-dismiss="modal" aria-label="Close">X</button>
+					<div class="da-modal__item">
+						<h3 class="da-modal__title">
+							СПАСИБО
+							ЗА
+							ЗАЯВКУ!
+						</h3>
+
+					</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+<!-- /Спасибо за заявку -->
+
+<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter40233369 = new Ya.Metrika({ id:40233369, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <!-- /Yandex.Metrika counter -->
 </body>
 </html>

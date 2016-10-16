@@ -9,9 +9,11 @@ $name = trim($_POST["name"]);
 
 $phone = trim($_POST["phone"]);
 $text = trim($_POST["text"]);
+$hidden = trim($_POST["hidden"]);
 
-$message = "Имя: $name \nEmail: $email \nТелефон: $phone \nСообщение: $text";
+
 $message = "
+Форма: $hidden <br>
 Имя: $name <br>
 Телефон: $phone <br>
 
